@@ -5,5 +5,5 @@ RUN apt-get update \
   bpython3 libatlas3-base libatlas-dev libatlas-base-dev liblapack-dev libblas-common libblas3 libblas-dev cython
   
 RUN git clone https://github.com/numpy/numpy.git && cd numpy && pip3 install . 
-RUN git clone https://github.com/ipython/ipython.git && cd ipython && pip3 install -e .[test]
+RUN git clone https://github.com/ipython/ipython.git && cd ipython 
 
