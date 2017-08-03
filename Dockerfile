@@ -11,5 +11,6 @@ RUN python3 setup.py build --fcompiler=gnu95 install
 RUN pip3 install nose
 RUN git clone https://github.com/ipython/ipython.git 
 WORKDIR /numpy/ipython
-RUN pip3 install -e .[test]
+RUN python3 setup.py install && cd .. && rm -rf ipython
+WORKDIR /
 CMD ["python3", "/numpy/numpy/tests/test_ctypeslib.py"]
