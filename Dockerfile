@@ -1,4 +1,5 @@
 FROM sumdoc/python3.7
+WORKDIR /
 
 RUN apt-get update \
   && apt-get install -y wget libpng1.6 libatlas-base-dev libopenblas-dev libopenblas-base libfreetype6 libfreetype6-dev \
