@@ -3,7 +3,7 @@ WORKDIR /
 
 RUN apt-get update \
   && apt-get install -y wget libpng-dev libatlas-base-dev libopenblas-base libfreetype6 libfreetype6-dev \
-  imagemagick ffmpeg gfortran qtbase5-dev qt5-default 
+  imagemagick ffmpeg gfortran libgfortran-6-dev qtbase5-dev qt5-default libxext-dev
   
   
 RUN apt-get install -y libjpeg62-turbo-dev netpbm liblcms2-dev \
@@ -19,8 +19,7 @@ RUN pip3 install python-dateutil Cython pytz cycler six nose sphinx pillow pytes
 
 # Installing numpy 
 # Installing numpy
-RUN git clone https://github.com/numpy/numpy.git && cd numpy && python3 setup.py build config_fc --fcompiler=gnu95 \
-  && python3 setup.py install
+RUN git clone https://github.com/numpy/numpy.git && cd numpy && python3 setup.py build config_fc --fcompiler=gnu95 install
 
 # Installing scipy 
 RUN git clone https://github.com/scipy/scipy.git & cd scipy && git clean -xdf \ 
