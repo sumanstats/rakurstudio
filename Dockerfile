@@ -18,12 +18,12 @@ RUN pip3 install python-dateutil Cython pytz cycler six nose sphinx pillow pytes
 
 
 # Installing numpy 
-RUN git clone https://github.com/numpy/numpy.git && cd numpy && python setup.py build --fcompiler=gnu95 install
+RUN git clone https://github.com/numpy/numpy.git && cd numpy && python3 setup.py build --fcompiler=gnu95 install
 
 
 # Installing scipy 
 RUN git clone https://github.com/scipy/scipy.git & cd scipy && git clean -xdf \ 
-  && python setup.py config_fc --fcompiler=gnu95 install
+  && python3 setup.py config_fc --fcompiler=gnu95 install
 
 # Installing matplotlib
 RUN git clone https://github.com/matplotlib/matplotlib.git && cd matplotlib && python3 setup.py build \
