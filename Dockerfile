@@ -6,7 +6,8 @@ RUN apt-get update \
   imagemagick ffmpeg gfortran libgfortran-6-dev qtbase5-dev qt5-default libxext-dev
   
   
-RUN apt-get install -y libjpeg62-turbo-dev netpbm liblcms2-dev \
+RUN apt-get update \
+  && apt-get install -y libjpeg62-turbo-dev netpbm liblcms2-dev \
   libwebp-dev libtiff-tools libtiff5-dev libharfbuzz-dev libffi-dev libjpeg-turbo-progs \
   libfribidi-dev pkg-config ghostscript cmake && apt-get clean
 
