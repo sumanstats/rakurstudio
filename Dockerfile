@@ -13,7 +13,7 @@ RUN apt-get update \
 RUN wget https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.3/sip-4.19.3.tar.gz \
   && tar -zxvf sip-4.19.3.tar.gz && cd sip-4.19.3 && python3 configure.py && make && make install \
   && wget https://sourceforge.net/projects/pyqt/files/PyQt5/PyQt-5.9/PyQt5_gpl-5.9.tar.gz \
-  && tar -zxvf PyQt5_gpl-5.9.tar.gz && cd PyQt5_gpl-5.9 && python3 configure.py && make && make install
+  && tar -zxvf PyQt5_gpl-5.9.tar.gz && cd PyQt5_gpl-5.9 && python3 configure.py --confirm-license && make && make install
 
 RUN pip3 install python-dateutil Cython pytz cycler six nose sphinx pillow pytest cffi 
 
