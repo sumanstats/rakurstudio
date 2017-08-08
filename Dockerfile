@@ -2,7 +2,7 @@ FROM sumdoc/python3.7
 WORKDIR /
 
 RUN apt-get update \
-  apt-get install -y libpng-dev gfortran libgfortran-6-dev musl libatlas-base-dev libopenblas-dev \
+  && apt-get install -y libpng-dev gfortran libgfortran-6-dev musl libatlas-base-dev libopenblas-dev \
   libopenblas-base imagemagick qt5-default qtbase5-dev libjpeg62-turbo-dev liblcms2-dev \
   libwebp-dev libtiff-tools libtiff5-dev libffi-dev libjpeg-turbo-progs \
   libfribidi-dev cmake && apt-get clean
