@@ -37,5 +37,7 @@ RUN git clone https://github.com/matplotlib/matplotlib.git && cd matplotlib && p
   
 # Removing cloned packages
 RUN rm -rf sip* matplotlib scipy numpy
+
+# command
   
 CMD ["python3","--version"]
