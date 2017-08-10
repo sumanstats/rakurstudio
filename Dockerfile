@@ -35,4 +35,7 @@ RUN git clone https://github.com/scipy/scipy.git && cd scipy && git clean -xdf \
 RUN git clone https://github.com/matplotlib/matplotlib.git && cd matplotlib && python3 setup.py build \
   && python3 setup.py install
   
-CMD ["python","--version"]
+# Removing cloned packages
+RUN rm -rf sip* matplotlib scipy numpy
+  
+CMD ["python3","--version"]
