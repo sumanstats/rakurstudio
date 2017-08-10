@@ -1,2 +1,3 @@
 # exper
-This is repository for experimenting things to learn docker.
+---
+Docker image with python 3.7, numpy, scipy and matplotlib all built from github. Enjoy !! 
