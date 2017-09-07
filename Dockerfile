@@ -35,7 +35,7 @@ RUN git clone https://github.com/scipy/scipy.git && cd scipy && git clean -xdf \
 
 # Installing matplotlib
 RUN git clone https://github.com/matplotlib/matplotlib.git && cd matplotlib && python3 setup.py build \
-  && python3 setup.py install && cd .. && rm -rf matplot*
+  && python3 setup.py install && cd .. && rm -rf matplot* && pip3 install jupyter notebook
   
 # command
   
