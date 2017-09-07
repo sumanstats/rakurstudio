@@ -7,7 +7,7 @@ RUN apt-get update \
   libwebp-dev libtiff-tools libtiff5-dev libffi-dev libjpeg-turbo-progs \
   libfribidi-dev cmake qtdeclarative5-dev qttools5-dev-tools qtmultimedia5-dev \
   libqt5svg5 libqtwebkit-dev libqt5webengine5 qml-module-qt-websockets libqt5bluetooth5 \
-  libqt5nfc5 qtwebengine5-dev libqt5x11extras5 libqt5serialport5 && apt-get clean
+  libqt5nfc5 qtwebengine5-dev libqt5x11extras5 libqt5serialport5 && rm -rf /var/lib/apt/lists/*
 
 
 #Install sip and pyqt5
