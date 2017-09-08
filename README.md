@@ -1,3 +1,3 @@
-# exper
+# Perl 6 in RStudio
 ---
-Docker image with python 3.7, numpy, scipy and matplotlib all built from github. Enjoy !! 
+Docker image with Perl 6 within RStudio for reproducible work. 
