@@ -48,8 +48,6 @@
 
 FROM rocker/verse 
 
-WORKDIR /
-
 RUN apt-get update \
   && apt-get install -y --no-install-recommends build-essential \
   git nano libzmq3-dev libreadline-dev ca-certificates\
