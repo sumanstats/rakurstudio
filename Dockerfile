@@ -18,7 +18,7 @@ RUN wget https://sourceforge.net/projects/pyqt/files/sip/sip-4.19.3/sip-4.19.3.t
   && tar -zxvf PyQt5_gpl-5.9.tar.gz && cd PyQt5_gpl-5.9 && python3 configure.py --confirm-license && make && make install \
   && cd .. && rm -rf PyQt* 
 
-RUN pip3 install python-dateutil Cython pytz cycler six nose sphinx pillow pytest cffi 
+RUN pip3 install python-dateutil Cython pytz cycler six nose sphinx pillow pytest cffi --no-cache-dir 
 
 
 
@@ -35,7 +35,7 @@ RUN git clone https://github.com/scipy/scipy.git && cd scipy && git clean -xdf \
 
 # Installing matplotlib
 RUN git clone https://github.com/matplotlib/matplotlib.git && cd matplotlib && python3 setup.py build \
-  && python3 setup.py install && cd .. && rm -rf matplot* && pip3 install jupyter notebook
+  && python3 setup.py install && cd .. && rm -rf matplot* && pip3 install jupyter notebook --no-cache-dir
   
 # command
   
