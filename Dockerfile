@@ -49,7 +49,7 @@
 FROM rocker/verse 
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends build-essential \
+  && apt-get install -y build-essential \
   git nano libzmq3-dev libreadline-dev ca-certificates\
   && rm -rf /var/lib/apt/lists/* \
   && git clone https://github.com/rakudo/rakudo.git \
@@ -61,6 +61,5 @@ RUN apt-get update \
 RUN git clone https://github.com/ugexe/zef.git && cd zef && perl6 -I. bin/zef install . && cd .. && rm -rf zef
 ENV PATH /usr/share/perl6/site/bin:$PATH
 RUN apt-get update \
-  && apt-get install -y gcc make && zef install Linenoise \
-  && rm -rf /var/lib/apt/lists/* && apt-get purge -y --auto-remove gcc make
+  && zef install Linenoise
 
