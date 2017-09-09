@@ -60,6 +60,5 @@ RUN apt-get update \
 
 RUN git clone https://github.com/ugexe/zef.git && cd zef && perl6 -I. bin/zef install . && cd .. && rm -rf zef
 ENV PATH /usr/share/perl6/site/bin:$PATH
-RUN apt-get update \
-  && zef install Linenoise
+RUN zef install Linenoise
 
