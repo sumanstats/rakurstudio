@@ -50,7 +50,6 @@ FROM rocker/verse
 
 RUN apt-get update \
   && apt-get install -y build-essential \
-  git nano libzmq3-dev libreadline-dev ca-certificates\
   && rm -rf /var/lib/apt/lists/* \
   && git clone https://github.com/rakudo/rakudo.git \
   && cd rakudo && perl Configure.pl --prefix=/usr --gen-moar --gen-nqp --backends=moar \
