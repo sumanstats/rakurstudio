@@ -1,7 +1,7 @@
 FROM rocker/rstudio
 
 RUN apt-get update \
-  && apt-get install -y build-essential \
+  && apt-get install -y build-essential zlib1g-dev \
   && rm -rf /var/lib/apt/lists/* \
   && git clone https://github.com/rakudo/rakudo.git \
   && cd rakudo && perl Configure.pl --prefix=/usr --gen-moar --gen-nqp --backends=moar \
