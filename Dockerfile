@@ -1,14 +1,14 @@
-FROM rocker/verse 
+FROM rakudo-star
 
 RUN apt-get update \
-  && apt-get install -y build-essential \
-  && rm -rf /var/lib/apt/lists/* \
-  && git clone https://github.com/rakudo/rakudo.git \
-  && cd rakudo && perl Configure.pl --prefix=/usr --gen-moar --gen-nqp --backends=moar \
-  && make && make install && cd .. && rm -rf rakudo
-  
+    && apt-get install -y python3-pip \
+    && rm -rf /var/lib/apt/lists/* && pip3 install jupyter notebook --no-cache-dir \
+    && zef -v install https://github.com/bduggan/p6-jupyter-kernel.git
 
+ENV TINI_VERSION v0.6.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /usr/bin/tini
+RUN chmod +x /usr/bin/tini && jupyter-kernel.p6 --generate-config
+ENTRYPOINT ["/usr/bin/tini", "--"]
 
-RUN git clone https://github.com/ugexe/zef.git && cd zef && perl6 -I. bin/zef install . && cd .. && rm -rf zef
-ENV PATH /usr/share/perl6/site/bin:$PATH
-RUN zef install Linenoise
+EXPOSE 8888
+CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
