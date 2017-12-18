@@ -1,4 +1,4 @@
-FROM rocker/verse
+FROM rocker/verse:devel
 
 RUN apt-get update \
   && apt-get install -y \
