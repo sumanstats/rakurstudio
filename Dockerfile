@@ -1,19 +1,24 @@
 FROM rocker/verse:devel
 
-RUN apt-get update \
-  && apt-get install -y \
-  nano libzmq3-dev \
-  && rm -rf /var/lib/apt/lists/* \
-  && git clone https://github.com/rakudo/rakudo.git \
-  && cd rakudo && perl Configure.pl --prefix=/usr --gen-moar --gen-nqp --backends=moar \
-  && make && make install && cd .. && rm -rf rakudo \
-  && git clone https://github.com/ugexe/zef.git && cd zef && perl6 -I. bin/zef install . \
-  && cd .. && rm -rf zef \
-  && export PATH=$PATH:/usr/share/perl6/site/bin \
-  && zef install Linenoise \
-  && apt-get autoremove
-  
-  #--no-install-recommends
+MAINTAINER Suman Khanal <suman81765@gmail.com> 
+ENV RAKUDO=2018.01
 
+ARG DEBIAN_FRONTEND=noninteractive
 
-ENV PATH /usr/share/perl6/site/bin:$PATH
+WORKDIR /
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential git nano libzmq3-dev ca-certificates libssl-dev curl wget \
+    && rm -rf /var/lib/apt/lists/* \
+    && wget http://rakudo.org/downloads/star/rakudo-star-${RAKUDO}.tar.gz \
+    && tar -xvzf rakudo-star-${RAKUDO}.tar.gz \
+    && cd rakudo-star-${RAKUDO} \
+    && perl Configure.pl --prefix=/usr --gen-moar --backends=moar \
+    && make && make install \
+    && cd .. && rm -rf rakudo-star-${RAKUDO} \
+    && export PATH=/usr/bin:/usr/share/perl6/site/bin:$PATH \
+    && zef install App::Mi6 \
+    && apt-get --auto-remove
+    
+    
+ENV PATH $PATH:/usr/bin:/usr/share/perl6/site/bin 
