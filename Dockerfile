@@ -3,7 +3,7 @@ FROM rocker/verse:devel
 MAINTAINER Suman Khanal <suman81765@gmail.com> 
 ENV RAKUDO=2018.01
 
-ARG DEBIAN_FRONTEND=noninteractive
+#ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /
 
