@@ -8,7 +8,7 @@ ENV RAKUDO=2018.01
 WORKDIR /
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential git nano libzmq3-dev ca-certificates libssl-dev curl wget \
+    git nano libzmq3-dev libssl-dev curl wget \
     && rm -rf /var/lib/apt/lists/* \
     && wget http://rakudo.org/downloads/star/rakudo-star-${RAKUDO}.tar.gz \
     && tar -xvzf rakudo-star-${RAKUDO}.tar.gz \
