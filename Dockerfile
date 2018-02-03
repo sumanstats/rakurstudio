@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && cd .. && rm -rf rakudo-star-${RAKUDO} \
     && export PATH=/usr/bin:/usr/share/perl6/site/bin:$PATH \
     && zef install App::Mi6 \
-    && apt-get --auto-remove
+    && apt-get auto-remove
     
     
 ENV PATH $PATH:/usr/bin:/usr/share/perl6/site/bin 
