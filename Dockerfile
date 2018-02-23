@@ -1,7 +1,18 @@
 FROM rocker/verse:devel
 
-MAINTAINER Suman Khanal <suman81765@gmail.com> 
-ENV RAKUDO=2018.01
+
+ENV LANG=C.UTF-8 \
+    LC_ALL=C.UTF-8 \
+    RAKUDO=2018.01
+
+ARG BUILD_DATE="2018-02-24" 
+
+ARG VCS_REF="git rev-parse --short HEAD" 
+LABEL org.label-schema.vcs-ref=$VCS_REF \
+      org.label-schema.vcs-url="https://github.com/sumandoc/TeXLive-2017" \
+      org.label-schema.build-date=$BUILD_DATE \
+      maintainer="Dr Suman Khanal <suman81765@gmail.com>"
+
 
 #ARG DEBIAN_FRONTEND=noninteractive
 
