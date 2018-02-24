@@ -7,13 +7,10 @@ ENV LANG=C.UTF-8 \
 
 ARG BUILD_DATE="2018-02-24" 
 
-ARG VCS_REF="git rev-parse --short HEAD"
 
-LABEL org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/sumandoc/P6RStudio" \
+LABEL org.label-schema.vcs-url="https://github.com/sumandoc/P6RStudio" \
       org.label-schema.build-date=$BUILD_DATE \
       maintainer="Dr Suman Khanal <suman81765@gmail.com>"
-
 
 #ARG DEBIAN_FRONTEND=noninteractive
 
