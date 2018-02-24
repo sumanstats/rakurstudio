@@ -1,4 +1,4 @@
-FROM rocker/verse:devel
+FROM rocker/verse
 
 
 ENV LANG=C.UTF-8 \
