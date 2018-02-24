@@ -11,12 +11,12 @@ Docker image with Perl 6 within RStudio for reproducible work.
 
 To get **RStudio** session with `Perl 6` go to the docker quickstart terminal and type:
 
-+ `docker run -d -p 8787:8787 sumdoc/p6rstudio`
++ `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumdoc/p6rstudio` which will mount current working directory to `/home/rstudio` within container
 + Go to browser and type `docker_ip_address:8787`where you will be welcomed with `RStudio` login screen
 + Type username: **rstudio**, password: **rstudio**
 
 You are done!!
 
-Now get involved in your research with **Perl 6** as a powerful scripting, OOP and functional language with powerful regex grammars.
+Now get involved in your research with **Perl 6** as a powerful scripting, OOP and functional language with awesome regex grammars.
 
 
