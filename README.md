@@ -4,7 +4,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![](https://images.microbadger.com/badges/image/sumdoc/p6rstudio.svg)](https://microbadger.com/images/sumdoc/p6rstudio "Get your own image badge on microbadger.com")
 
-Docker image with Perl 6 within RStudio for reproducible work. Also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation.
+Docker image with [Perl 6](https://perl6.org/) within RStudio for reproducible work. Also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation.
 
 
 ## How to run this image?
