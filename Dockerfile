@@ -17,7 +17,7 @@ LABEL org.label-schema.vcs-url="https://github.com/sumandoc/P6RStudio" \
 WORKDIR /
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git nano libzmq3-dev libssl-dev curl wget \
+    git nano libzmq3-dev libssl-dev curl wget imagemagick \
     && rm -rf /var/lib/apt/lists/* \
     && wget http://rakudo.org/downloads/star/rakudo-star-${RAKUDO}.tar.gz \
     && tar -xvzf rakudo-star-${RAKUDO}.tar.gz \
