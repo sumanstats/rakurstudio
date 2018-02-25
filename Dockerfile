@@ -1,4 +1,4 @@
-FROM rocker/verse
+FROM rocker/tidyverse
 
 
 ENV LANG=C.UTF-8 \
