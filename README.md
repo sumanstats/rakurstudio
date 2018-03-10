@@ -1,4 +1,4 @@
-# Perl 6, R and Tidyverse in RStudio
+# Perl 6, R and Tidyverse in RStudio®
 
 [![Perl 6](https://img.shields.io/badge/Perl%206-2018.01-blue.svg)](https://rakudo.perl6.org/downloads/star/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,10 +10,10 @@ Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyv
 
 ## How to run this image?
 
-To get **RStudio** session with `Perl 6` go to the docker quickstart terminal and type:
+To get **RStudio®** session with `Perl 6` go to the docker quickstart terminal and type:
 
 + `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumdoc/p6rstudio` which will mount current working directory to `/home/rstudio` within container
-+ Go to browser and type `docker_ip_address:8787`where you will be welcomed with `RStudio` login screen
++ Go to browser and type `docker_ip_address:8787`where you will be welcomed with `RStudio®` login screen
 + Type username: **rstudio**, password: **rstudio**
 
 You are done!!
