@@ -5,7 +5,7 @@
 [![](https://images.microbadger.com/badges/image/sumdoc/p6rstudio.svg)](https://microbadger.com/images/sumdoc/p6rstudio "Get your own image badge on microbadger.com")
 [![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumandoc/P6RStudio)
 
-Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within RStudio for reproducible work. Also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation.
+Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work. Also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation.
 
 
 ## How to run this image?
