@@ -16,7 +16,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 WORKDIR /
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git nano libzmq3-dev libssl-dev curl wget imagemagick \
+    git nano libzmq3-dev libssl-dev curl wget imagemagick asciinema \
     && rm -rf /var/lib/apt/lists/* \
     && wget http://rakudo.org/downloads/star/rakudo-star-${RAKUDO}.tar.gz \
     && tar -xvzf rakudo-star-${RAKUDO}.tar.gz \
