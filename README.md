@@ -7,7 +7,7 @@
 [![Build](https://img.shields.io/docker/automated/sumdoc/p6rstudio.svg)](https://hub.docker.com/r/sumdoc/p6rstudio/)
 
 
-Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work. Also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation.
+Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work. Also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation and [asciinema](https://asciinema.org/) to record your terminal sessions..
 
 
 ## How to run this image?
