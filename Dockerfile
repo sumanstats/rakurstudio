@@ -3,7 +3,7 @@ FROM rocker/tidyverse
 
 ENV LANG=C.UTF-8 \
     LC_ALL=C.UTF-8 \
-    RAKUDO=2018.01
+    RAKUDO=2018.04
 
 ARG BUILD_DATE 
 
