@@ -30,3 +30,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     
     
 ENV PATH $PATH:/usr/bin:/usr/share/perl6/site/bin 
+RUN curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain stable -y
+ENV PATH=/root/.cargo/bin:$PATH
