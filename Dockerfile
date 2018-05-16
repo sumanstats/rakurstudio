@@ -1,17 +1,13 @@
 FROM rocker/tidyverse
 
 
-ENV LANG=C.UTF-8 \
-    LC_ALL=C.UTF-8 \
-    RAKUDO=2018.04
+ENV RAKUDO=2018.04
 
 ARG BUILD_DATE 
 
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       maintainer="Dr Suman Khanal <suman81765@gmail.com>"
-
-#ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /
 
