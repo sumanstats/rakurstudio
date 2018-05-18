@@ -9,7 +9,6 @@
 
 Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work. Also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation and [asciinema](https://asciinema.org/) to record your terminal sessions.
 
-[Rust](https://www.rust-lang.org/en-US/) is also included to help building packages that contains rust code.
 
 
 ## How to run this image?
