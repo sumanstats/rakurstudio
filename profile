@@ -2,10 +2,10 @@
 # and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
 
 if [ "`id -u`" -eq 0 ]; then
-  PATH="/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+  PATH="/usr/local/cargo/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/share/perl6/site/bin"
 else
-  PATH="/usr/local/cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
-fi
+  PATH="/usr/local/cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games:/usr/share/perl6/site/bin"
+fi #added /usr/share/perl6/site/bin for zef of perl 6
 export PATH
 
 if [ "${PS1-}" ]; then
