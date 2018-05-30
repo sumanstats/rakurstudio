@@ -1,4 +1,4 @@
-# Perl 6, R and Tidyverse in RStudio®
+# Perl 6, Rust and Tidyverse in RStudio®
 
 [![Perl 6](https://img.shields.io/badge/Perl%206-2018.04-blue.svg)](https://rakudo.perl6.org/downloads/star/)
 [![Rust](https://img.shields.io/badge/Rust-1.26.1-green.svg)](https://www.rust-lang.org/en-US/)
