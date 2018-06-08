@@ -15,7 +15,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && pip3 install wheel setuptools --no-cache-dir \
     && pip3 install asciinema --no-cache-dir \
     && rm -rf /var/lib/apt/lists/* \
-    && wget http://rakudo.org/downloads/star/rakudo-star-${RAKUDO}.tar.gz \
+    && wget https://rakudo.org/dl/star/rakudo-star-${RAKUDO}.tar.gz \
     && tar -xvzf rakudo-star-${RAKUDO}.tar.gz \
     && cd rakudo-star-${RAKUDO} \
     && perl Configure.pl --prefix=/usr --gen-moar --backends=moar \
@@ -24,8 +24,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && export PATH=/usr/bin:/usr/share/perl6/site/bin:$PATH \
     && zef install App::Mi6 \
     && apt-get auto-remove
-    
-    
+ 
 RUN set -eux; \
     \
     url="https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-init"; \
