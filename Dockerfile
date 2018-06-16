@@ -11,7 +11,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
 
 #WORKDIR /
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    git nano libzmq3-dev libssl-dev curl wget imagemagick python3-pip \
+    libzmq3-dev curl imagemagick python3-pip \
     && pip3 install wheel setuptools --no-cache-dir \
     && pip3 install asciinema --no-cache-dir \
     && rm -rf /var/lib/apt/lists/* \
