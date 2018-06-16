@@ -1,4 +1,4 @@
-FROM rocker/tidyverse
+FROM rocker/verse:latest
 ENV RAKUDO=2018.04 \
     RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
