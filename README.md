@@ -34,3 +34,7 @@ You are done!!
 **Perl 6** is a powerful scripting, OOP and functional language with robust regex grammars.
 
 
+## License ##
+
+The Dockerfiles in this repository are licensed under MIT license.
+
