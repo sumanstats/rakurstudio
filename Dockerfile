@@ -1,8 +1,5 @@
 FROM rocker/verse:latest
-ENV RAKUDO=2018.04 \
-    RUSTUP_HOME=/usr/local/rustup \
-    CARGO_HOME=/usr/local/cargo \
-    RUST_VERSION=1.27.0
+ENV RAKUDO=2018.04
 
 LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
 
@@ -20,16 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && cd .. && rm -rf rakudo-star-${RAKUDO}.tar.gz rakudo-star-${RAKUDO} \
     && export PATH=/usr/bin:/usr/share/perl6/site/bin:$PATH \
     && zef install App::Mi6 \
-    && apt-get auto-remove
- 
-RUN set -eux; \
-    \
-    url="https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-init"; \
-    wget "$url"; \
-    chmod +x rustup-init; \
-    ./rustup-init -y --no-modify-path --default-toolchain $RUST_VERSION; \
-    rm rustup-init; \
-    chmod -R a+w $RUSTUP_HOME $CARGO_HOME; \
-    rm /etc/profile
+    && apt-get auto-remove \
+    && rm /etc/profile
  
 ADD profile /etc/profile
