@@ -24,7 +24,8 @@ Both images also contains [ImageMagick®](https://www.imagemagick.org/script/ind
 
 To get **RStudio®** session with `Perl 6` go to the docker quickstart terminal and type:
 
-+ `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumdoc/p6rstudio` which will mount current working directory to `/home/rstudio` within container
++ `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumdoc/p6rstudio` **OR**
+  `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumdoc/rustp6rstudio` which will mount current working directory to `/home/rstudio`   within container
 + Go to browser and type `docker_ip_address:8787`where you will be welcomed with `RStudio®` login screen
 + Type username: **rstudio**, password: **rstudio**
 
