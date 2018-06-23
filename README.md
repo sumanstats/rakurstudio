@@ -14,8 +14,6 @@ image            | description
 [rustp6rstudio](https://hub.docker.com/r/sumdoc/rustp6rstudio/) | Contains Rust and cargo in addition to the above image.
 
 
-Both images also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation and [asciinema](https://asciinema.org/) to record your terminal sessions.
-
 [Rust](https://www.rust-lang.org/en-US/) and `cargo` will be useful in building R packages containing `rust` code.
 
 
