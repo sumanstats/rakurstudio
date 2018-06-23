@@ -3,15 +3,20 @@
 [![Perl 6](https://img.shields.io/badge/Perl%206-2018.04-blue.svg)](https://rakudo.perl6.org/downloads/star/)
 [![Rust](https://img.shields.io/badge/Rust-1.27.0-green.svg)](https://www.rust-lang.org/en-US/)
 [![License: MIT](https://img.shields.io/github/license/sumandoc/P6RStudio.svg)](https://github.com/sumandoc/P6RStudio/blob/master/LICENSE)
-[![](https://images.microbadger.com/badges/image/sumdoc/p6rstudio.svg)](https://microbadger.com/images/sumdoc/p6rstudio "Get your own image badge on microbadger.com")
 [![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumandoc/P6RStudio)
 
+This repository builds two images in DockerHub.
 
 
-Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work. 
-Also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation and [asciinema](https://asciinema.org/) to record your terminal sessions.
+image            | description                               
+---------------- | -----------------------------------------
+[p6rstudio](https://hub.docker.com/r/sumdoc/p6rstudio/) | Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work.
+[rustp6rstudio](https://hub.docker.com/r/sumdoc/rustp6rstudio/) | Contains Rust and cargo in addition to the above image.
 
-[Rust](https://www.rust-lang.org/en-US/) and `cargo` are also added to help in building R packages containing `rust` code.
+
+Both images also contains [ImageMagick®](https://www.imagemagick.org/script/index.php) for image manipulation and [asciinema](https://asciinema.org/) to record your terminal sessions.
+
+[Rust](https://www.rust-lang.org/en-US/) and `cargo` will be useful in building R packages containing `rust` code.
 
 
 
