@@ -2,12 +2,9 @@ FROM rocker/verse:latest
 ENV RAKUDO=2018.04 \
     RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
-    RUST_VERSION=1.26.2
+    RUST_VERSION=1.27.0
 
-ARG BUILD_DATE 
-
-LABEL org.label-schema.build-date=$BUILD_DATE \
-      maintainer="Dr Suman Khanal <suman81765@gmail.com>"
+LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
 
 #WORKDIR /
 RUN apt-get update && apt-get install -y --no-install-recommends \
