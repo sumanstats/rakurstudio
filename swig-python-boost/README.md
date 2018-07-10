@@ -1,6 +1,7 @@
-This image contains [pybind11](https://github.com/pybind/pybind11), [SWIG(Simplified Wrapper and Interface Generator)](http://www.swig.org/), [Boost.Python](https://www.boost.org/doc/libs/1_65_0/libs/python/doc/html/index.html) and [cython](http://cython.org/) along with Python 3.
+## Python 3 with pybind11 and Boost.Python
 
-Mount the directory in the host (containig C/C++ files) inside the container and use it from the shell and/or IPython.
+
+This image contains [pybind11](https://github.com/pybind/pybind11), [SWIG(Simplified Wrapper and Interface Generator)](http://www.swig.org/), [Boost.Python](https://www.boost.org/doc/libs/1_65_0/libs/python/doc/html/index.html) and [cython](http://cython.org/) along with Python 3.
 
 
 ## How to run the image?
