@@ -21,5 +21,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && make && make install \
     && cd .. && rm -rf rakudo-star-${RAKUDO}.tar.gz rakudo-star-${RAKUDO} \
     && ln -s /usr/share/perl6/site/bin/zef /usr/local/bin \
-    && zef install App::Mi6 \    
+    && zef install App::Mi6 \
+    && ln -s /usr/share/perl6/site/bin/mi6 /usr/local/bin \
     && apt-get auto-remove 
