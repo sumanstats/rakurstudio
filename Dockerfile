@@ -20,9 +20,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && perl Configure.pl --prefix=/usr --gen-moar --backends=moar \
     && make && make install \
     && cd .. && rm -rf rakudo-star-${RAKUDO}.tar.gz rakudo-star-${RAKUDO} \
-    && export PATH=/usr/bin:/usr/share/perl6/site/bin:$PATH \
-    && zef install App::Mi6 \
-    && apt-get auto-remove \
-    && rm /etc/profile
- 
-ADD profile /etc/profile
+    && ln -s /usr/share/perl6/site/bin/zef /usr/local/bin \
+    && zef install App::Mi6 \    
+    && apt-get auto-remove 
