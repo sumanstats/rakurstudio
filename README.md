@@ -1,7 +1,7 @@
 # Perl 6, Rust and Tidyverse
 
 [![Perl 6](https://img.shields.io/badge/Perl%206-2018.04-blue.svg)](https://rakudo.perl6.org/downloads/star/)
-[![Rust](https://img.shields.io/badge/Rust-1.27.0-green.svg)](https://www.rust-lang.org/en-US/)
+[![Rust](https://img.shields.io/badge/Rust-1.27.1-green.svg)](https://www.rust-lang.org/en-US/)
 [![License: MIT](https://img.shields.io/github/license/sumandoc/P6RStudio.svg)](https://github.com/sumandoc/P6RStudio/blob/master/LICENSE)
 [![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumandoc/P6RStudio)
 
@@ -17,7 +17,6 @@ image            | description
 
 [Rust](https://www.rust-lang.org/en-US/) and `cargo` will be useful in building R packages containing `rust` code.
 
-**Note !!** Though installed, I couldn't access rust inside R. Something to do with user permissions. So I am still searching how to do. Any help would be appreciated on this regard.
 
 ## How to run this image?
 
