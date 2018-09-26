@@ -1,7 +1,7 @@
 FROM sumdoc/p6rstudio
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
-    RUST_VERSION=1.29.0
+    RUST_VERSION=1.29.1
 
 LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
 
