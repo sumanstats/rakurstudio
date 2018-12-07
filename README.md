@@ -1,7 +1,7 @@
 # Perl 6, Rust and Tidyverse
 
-[![Perl 6](https://img.shields.io/badge/Perl%206-2018.06-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.perl6.org/downloads/star/)
-[![Rust](https://img.shields.io/badge/Rust-1.29.1-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
+[![Perl 6](https://img.shields.io/badge/Perl%206-2018.10-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.perl6.org/downloads/star/)
+[![Rust](https://img.shields.io/badge/Rust-1.31.0-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
 [![License: MIT](https://img.shields.io/github/license/sumandoc/P6RStudio.svg)](https://github.com/sumandoc/P6RStudio/blob/master/LICENSE)
 [![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumandoc/P6RStudio)
 
