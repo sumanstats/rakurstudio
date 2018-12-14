@@ -10,8 +10,8 @@ This repository builds three images in DockerHub.
 
 image            | description                               
 ---------------- | -----------------------------------------
-[p6rstudio](https://hub.docker.com/r/sumdoc/p6rstudio/) | Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work.
-[rustp6rstudio](https://hub.docker.com/r/sumdoc/rustp6rstudio/) | Contains Rust and cargo in addition to the above image.
+[rakurstudio](https://hub.docker.com/r/sumdoc/p6rstudio/) | Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work.
+[rustrakurstudio](https://hub.docker.com/r/sumdoc/rustp6rstudio/) | Contains Rust and cargo in addition to the above image.
 [swig-python-boost](https://hub.docker.com/r/sumdoc/swig-python-boost/) | Contains Python 3, pybind11 and Boost.Python for wrapping C/C++ libraries in Python but without RStudio.
 
 
