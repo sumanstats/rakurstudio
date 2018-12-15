@@ -10,9 +10,9 @@ This repository builds three images in DockerHub.
 
 image            | description                               
 ---------------- | -----------------------------------------
-[rakurstudio](https://cloud.docker.com/repository/docker/sumankhanal/rakurstudio) | Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work.
-[rustrakurstudio](https://cloud.docker.com/repository/docker/sumankhanal/rustrakurstudio) | Contains Rust and cargo in addition to the above image.
-[swig-python-boost](https://cloud.docker.com/repository/docker/sumankhanal/swig-python-boost) | Contains Python 3, pybind11 and Boost.Python for wrapping C/C++ libraries in Python but without RStudio.
+[rakurstudio](https://hub.docker.com/r/sumankhanal/rakurstudio) | Docker image with [R](https://www.r-project.org/), [tidyverse](https://www.tidyverse.org/) and [Perl 6](https://perl6.org/) within [RStudio®](https://www.rstudio.com/) for reproducible work.
+[rustrakurstudio](https://hub.docker.com/r/sumankhanal/rustrakurstudio) | Contains Rust and cargo in addition to the above image.
+[swig-python-boost](https://hub.docker.com/r/sumankhanal/swig-python-boost) | Contains Python 3, pybind11 and Boost.Python for wrapping C/C++ libraries in Python but without RStudio.
 
 
 [Rust](https://www.rust-lang.org/en-US/) and `cargo` will be useful in building R packages containing `rust` code.
@@ -22,7 +22,7 @@ image            | description
 
 To get **RStudio®** session with `Perl 6` go to the docker quickstart terminal and type:
 
-+ `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumankhanal/p6rstudio` **OR** `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumankhanal/rustp6rstudio` which will mount current working directory to `/home/rstudio`   within container
++ `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumankhanal/rustrakurstudio` which will mount current working directory to `/home/rstudio`   within container
 + Go to browser and type `docker_ip_address:8787`where you will be welcomed with `RStudio®` login screen
 + Type username: **rstudio**, password: **rstudio**
 
