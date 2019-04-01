@@ -8,7 +8,7 @@ This image contains [pybind11](https://github.com/pybind/pybind11), [SWIG(Simpli
 
 
 Keep all your `.c` or `.cpp` files in a separate folder. Go inside that directory in docker terminal. From **that** directory run this command:
-`docker run -it -v $PWD:/home -w /home sumdoc/swig-python-boost /bin/bash`.
+`docker run -it -v $PWD:/home -w /home sumankhanal/swig-python-boost /bin/bash`.
 
 What it essentially does is mount your host directory `$PWD` containing C/C++ files into `/home` directory of container and this `/home` directory will be your working directory in the container with all the C/C++ files.
 
