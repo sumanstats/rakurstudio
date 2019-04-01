@@ -28,7 +28,7 @@ To get **RStudio®** session with `Perl 6` go to the docker quickstart terminal 
 
 You are done!!
 
-**Perl 6** is a powerful scripting, OOP and functional language with robust regex grammars.
+**Perl 6** is a powerful scripting, OOP and functional programming language with robust regex grammars.
 
 
 ## License ##
