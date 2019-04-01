@@ -1,5 +1,5 @@
 FROM rocker/verse:latest
-ENV RAKUDO=2018.10
+ENV RAKUDO=2019.03
 
 LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
 
