@@ -1,9 +1,9 @@
 # Perl 6, Rust and Tidyverse
 
-[![Perl 6](https://img.shields.io/badge/Perl%206-2019.03-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.perl6.org/downloads/star/)
-[![Rust](https://img.shields.io/badge/Rust-1.33.0-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
-[![License: MIT](https://img.shields.io/github/license/sumandoc/P6RStudio.svg)](https://github.com/sumandoc/P6RStudio/blob/master/LICENSE)
-[![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumandoc/P6RStudio)
+[![Perl 6](https://img.shields.io/badge/Perl%206-2019.07-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.perl6.org/downloads/star/)
+[![Rust](https://img.shields.io/badge/Rust-1.36.0-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
+[![License: MIT](https://img.shields.io/github/license/sumandoc/rakurstudio.svg)](https://github.com/sumandoc/rakurstudio/blob/master/LICENSE)
+[![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumandoc/rakurstudio)
 
 This repository builds three images in DockerHub.
 
