@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends wget \
     && rm -rf /var/lib/apt/lists/* \
     && wget https://github.com/nxadm/rakudo-pkg/releases/download/v${RAKUDO}/rakudo-pkg-Debian9_${RAKUDO}-01_amd64.deb \
     && dpkg -i rakudo-pkg-Debian9_${RAKUDO}-01_amd64.deb \
-    && bash /opt/rakudo-pkg/bin/add-perl6-to-path \
+    && bash /opt/rakudo-pkg/bin/add-perl6-to-path && tty -s && mesg n || true \
     && source /root/.profile \
     && rm rakudo-pkg-Debian9_${RAKUDO}-01_amd64.deb \
     && zef install App::Mi6
