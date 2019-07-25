@@ -12,4 +12,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl libreadlin
     && dpkg -i rakudo-pkg-Debian9_${RAKUDO}-01_amd64.deb \
     && rm rakudo-pkg-Debian9_${RAKUDO}-01_amd64.deb \
     && echo "PATH=${PATH}" >> /usr/local/lib/R/etc/Renviron \
+    && echo "export PATH=${PATH}" >> /etc/profile \
     && zef install Readline
