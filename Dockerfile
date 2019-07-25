@@ -14,4 +14,3 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl libreadlin
     && echo "PATH=${PATH}" >> /usr/local/lib/R/etc/Renviron \
     && sed 's+/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games+/opt/rakudo-pkg/bin:/opt/rakudo-pkg/share/perl6/site/bin:/home/rstudio/.perl6/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin+' /etc/profile \
     && zef install Readline
-CMD ["perl6", "--version"]
