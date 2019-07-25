@@ -1,6 +1,6 @@
 FROM rocker/rstudio
 ENV RAKUDO=2019.07
-ENV PATH=$PATH:/opt/rakudo-pkg/bin:/opt/rakudo-pkg/share/perl6/site/bin:/home/rstudio/.perl6/bin
+ENV PATH=/opt/rakudo-pkg/bin:/opt/rakudo-pkg/share/perl6/site/bin:/home/rstudio/.perl6/bin:$PATH
 
 
 LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
