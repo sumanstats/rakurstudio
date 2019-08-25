@@ -22,9 +22,9 @@ image            | description
 
 To get **RStudio®** session with `Perl 6` go to the docker quickstart terminal and type:
 
-+ `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -v $PWD:/home/rstudio sumankhanal/rustrakurstudio` which will mount current working directory to `/home/rstudio`   within container
-+ Go to browser and type `docker_ip_address:8787`where you will be welcomed with `RStudio®` login screen
-+ Type username: **rstudio**, password: **rstudio**
++ `docker run --rm -p 8787:8787 -e PASSWORD=yourpasswordhere -v $PWD:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run --rm -p 8787:8787 -e PASSWORD=yourpasswordhere -v $PWD:/home/rstudio sumankhanal/rustrakurstudio` which will mount current working directory to `/home/rstudio`   within container
++ Visit `docker_ip_address:8787` in your browser and log in with username **rstudio** and the password you set. **NB: Setting a password is now REQUIRED**. Container will error otherwise.
+
 
 You are done!!
 
