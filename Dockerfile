@@ -21,4 +21,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && cd zef \
     && perl6 -I. bin/zef install . && cd .. && rm -rf zef \
     && echo "PATH=${PATH}" >> /usr/local/lib/R/etc/Renviron \
+    && echo "PATH=${PATH}" >> ~/.bashrc
     && zef install Linenoise App::Mi6
