@@ -1,5 +1,5 @@
 FROM rocker/rstudio
-ENV RAKUDO=2019.07
+ENV RAKUDO=2019.11
 ENV PATH=$PATH:/usr/share/perl6/site/bin
 
 
@@ -9,7 +9,7 @@ LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
 RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir rakudo \
-    && wget -O rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/${RAKUDO}.1/rakudo-${RAKUDO}.1.tar.gz \
+    && wget -O rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/${RAKUDO}/rakudo-${RAKUDO}.tar.gz \
     && tar xzf rakudo.tar.gz --strip-components=1 -C rakudo \
     && ( \
         cd rakudo \
