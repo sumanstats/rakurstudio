@@ -1,9 +1,9 @@
-# Perl 6, Rust and Tidyverse
+# Raku, Rust and Tidyverse
 
-[![Perl 6](https://img.shields.io/badge/Perl%206-2019.07-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.perl6.org/downloads/star/)
+[![Raku](https://img.shields.io/badge/Raku-2019.07-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.org/files/star)
 [![Rust](https://img.shields.io/badge/Rust-1.37.0-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
-[![License: MIT](https://img.shields.io/github/license/sumandoc/rakurstudio.svg)](https://github.com/sumandoc/rakurstudio/blob/master/LICENSE)
-[![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumandoc/rakurstudio)
+[![License: MIT](https://img.shields.io/github/license/sumanstats/rakurstudio.svg)](https://github.com/sumanstats/rakurstudio/blob/master/LICENSE)
+[![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumanstats/rakurstudio)
 
 This repository builds three images in DockerHub.
 
@@ -20,7 +20,7 @@ image            | description
 
 ## How to run this image?
 
-To get **RStudio®** session with `Perl 6` go to the docker quickstart terminal and type:
+To get **RStudio®** session with `Raku` go to the docker quickstart terminal and type:
 
 + `docker run --rm -p 8787:8787 -e PASSWORD=yourpasswordhere -v $PWD:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run --rm -p 8787:8787 -e PASSWORD=yourpasswordhere -v $PWD:/home/rstudio sumankhanal/rustrakurstudio` which will mount current working directory to `/home/rstudio`   within container
 + Visit `docker_ip_address:8787` in your browser and log in with username **rstudio** and the password you set. **NB: Setting a password is now REQUIRED**. Container will error otherwise.
@@ -28,7 +28,7 @@ To get **RStudio®** session with `Perl 6` go to the docker quickstart terminal 
 
 You are done!!
 
-**Perl 6** is a powerful scripting, OOP and functional programming language with robust regex grammars.
+**Raku** is a powerful scripting, OOP and functional programming language with robust regex grammars.
 
 
 ## License ##
