@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl libgsl23 l
     && rm -rf rakudo rakudo.tar.gz \
     && git clone https://github.com/ugexe/zef.git \
     && cd zef \
-    && perl6 -I. bin/zef install . && cd .. && rm -rf zef \
+    && raku -I. bin/zef install . && cd .. && rm -rf zef \
     && echo "PATH=${PATH}" >> /usr/local/lib/R/etc/Renviron \
     && zef install Linenoise App::Mi6 Pod::To::HTML \
     && ln -s /usr/share/perl6/site/bin/* /usr/local/bin
