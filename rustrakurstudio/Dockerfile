@@ -1,7 +1,7 @@
 FROM sumankhanal/rakurstudio
 ENV RUSTUP_HOME=/usr/local/rustup \
     CARGO_HOME=/usr/local/cargo \
-RUST_VERSION=1.40.0
+RUST_VERSION=1.43.1
 
 LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
 
