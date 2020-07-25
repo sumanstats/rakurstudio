@@ -6,7 +6,7 @@ ENV PATH=$PATH:/usr/share/perl6/site/bin
 LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
 
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl \ # libgsl23 libgsl-dev \
+RUN apt-get update && apt-get install -y --no-install-recommends curl \ 
     && rm -rf /var/lib/apt/lists/* \
     && mkdir rakudo \
     && wget -O rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/${RAKUDO}/rakudo-${RAKUDO}.tar.gz \
@@ -23,3 +23,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \ # libgsl
     && echo "PATH=${PATH}" >> /usr/local/lib/R/etc/Renviron \
     && zef install Linenoise App::Mi6 Pod::To::HTML \
     && ln -s /usr/share/perl6/site/bin/* /usr/local/bin
+    
+    # if GNU GSL required install libgsl23 libgsl-dev 
