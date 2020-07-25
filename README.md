@@ -1,7 +1,7 @@
 # Raku, Rust and Tidyverse
 
-[![Raku](https://img.shields.io/badge/Raku-2020.05.1-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.org/files/star)
-[![Rust](https://img.shields.io/badge/Rust-1.43.1-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
+[![Raku](https://img.shields.io/badge/Raku-2020.07-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.org/files/star)
+[![Rust](https://img.shields.io/badge/Rust-1.45.0-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
 [![License: MIT](https://img.shields.io/github/license/sumanstats/rakurstudio.svg)](https://github.com/sumanstats/rakurstudio/blob/master/LICENSE)
 [![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumanstats/rakurstudio)
 
