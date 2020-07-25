@@ -24,7 +24,7 @@ image            | description
 
 To get **RStudio®** session with `Raku` go to the docker quickstart terminal and type:
 
-+ `docker run -d -p 8787:8787 -e PASSWORD=yourpasswordhere --name rstudio -v $PWD:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -e PASSWORD=yourpasswordhere --name rstudio -v $PWD:/home/rstudio sumankhanal/rustrakurstudio` which will mount current working directory to `/home/rstudio`   within container
++ `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name rstudio -v $PWD:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name rstudio -v $PWD:/home/rstudio sumankhanal/rustrakurstudio` which will mount current working directory to `/home/rstudio`   within container
 + Visit `docker_ip_address:8787` in your browser and log in with username **rstudio** and the password you set. **NB: Setting a password is now REQUIRED**. Container will error otherwise.
 
 To read more on usage, go [here](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image).
