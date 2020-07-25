@@ -1,12 +1,12 @@
 FROM rocker/rstudio
-ENV RAKUDO=2020.05.1
+ENV RAKUDO=2020.07
 ENV PATH=$PATH:/usr/share/perl6/site/bin
 
 
 LABEL maintainer="Dr Suman Khanal <suman81765@gmail.com>"
 
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl libgsl23 libgsl-dev \
+RUN apt-get update && apt-get install -y --no-install-recommends curl \ # libgsl23 libgsl-dev \
     && rm -rf /var/lib/apt/lists/* \
     && mkdir rakudo \
     && wget -O rakudo.tar.gz https://github.com/rakudo/rakudo/releases/download/${RAKUDO}/rakudo-${RAKUDO}.tar.gz \
