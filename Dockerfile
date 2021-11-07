@@ -1,5 +1,5 @@
-FROM rocker/rstudio
-ENV RAKUDO=2020.07
+FROM rocker/rstudio:4.1.2
+ENV RAKUDO=2021.10
 ENV PATH=$PATH:/usr/share/perl6/site/bin
 
 
