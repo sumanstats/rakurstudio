@@ -2,10 +2,10 @@
 
 **Raku** is a powerful scripting, OOP and functional programming language with robust regex grammars. This image enables to use **Raku** with the comfort of **RStudio** server.
 
-[![Raku](https://img.shields.io/badge/Raku-2021.10-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.org/files/star)
-[![Rust](https://img.shields.io/badge/Rust-1.56.1-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
+[![Raku](https://img.shields.io/badge/Raku-2023.09-blue.svg?longCache=true&style=for-the-badge)](https://rakudo.org/files/star)
+[![Rust](https://img.shields.io/badge/Rust-1.73.0-green.svg?longCache=true&style=for-the-badge)](https://www.rust-lang.org/en-US/)
 [![License: MIT](https://img.shields.io/github/license/sumanstats/rakurstudio.svg)](https://github.com/sumanstats/rakurstudio/blob/master/LICENSE)
-[![Github Stars](https://img.shields.io/github/stars/sumandoc/P6RStudio.svg?style=social&label=Github)](https://github.com/sumanstats/rakurstudio)
+[![Github Stars](https://img.shields.io/github/stars/sumanstats/rakurstudio.svg?style=social&label=Github)](https://github.com/sumanstats/rakurstudio)
 
 This repository builds three images in DockerHub.
 
