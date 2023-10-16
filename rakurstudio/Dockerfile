@@ -21,7 +21,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends curl \
     && cd zef \
     && raku -I. bin/zef install . && cd .. && rm -rf zef \
     && echo "PATH=${PATH}" >> /usr/local/lib/R/etc/Renviron \
-    && zef install Linenoise App::Mi6 Pod::To::HTML \
+    && zef install Linenoise \ 
     && ln -s /usr/share/perl6/site/bin/* /usr/local/bin
-    
+    # don't install App::Mi6 Pod::To::HTML as its failing
     # if GNU GSL required install libgsl23 libgsl-dev 
