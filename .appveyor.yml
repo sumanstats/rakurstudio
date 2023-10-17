@@ -7,7 +7,7 @@ environment:
     USER: sumankhanal
   matrix:
     - IMAGE: rakurstudio
-    # - IMAGE: rustrakurstudio
+    - IMAGE: rustrakurstudio
     - IMAGE: swig-python-boost
 
 build_script:
