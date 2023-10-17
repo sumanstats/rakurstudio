@@ -31,7 +31,7 @@ To get **RStudio®** session with `Raku`, first download Docker Desktop and foll
 
 + In `PowerShell` line in Windows, run the rstudio with `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v ${PWD}:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v ${PWD}:/home/rstudio sumankhanal/rustrakurstudio` which will mount the *current working directory* to `/home/rstudio`   within container
 
-+ In `Git Bash Shell` in Windows, run the rstudio with `MSYS_NO_PATHCONV=1 docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v $(pwd):/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v ${PWD}:/home/rstudio sumankhanal/rustrakurstudio` which will mount the *current working directory* to `/home/rstudio`   within container
++ In `Git Bash Shell` in Windows, run the rstudio with `MSYS_NO_PATHCONV=1 docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v $(pwd):/home/rstudio sumankhanal/rakurstudio` **OR** `MSYS_NO_PATHCONV=1 docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v $(pwd):/home/rstudio sumankhanal/rustrakurstudio` which will mount the *current working directory* to `/home/rstudio`   within container
 
 + Visit `http://localhost:8787/` in your browser and log in with the `<username>` and `password` you set. **NB: Setting a password is now REQUIRED**. Container will error otherwise.
 
