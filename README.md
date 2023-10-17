@@ -37,7 +37,7 @@ To get **RStudio®** session with `Raku`, first download Docker Desktop and foll
 
 + Once you are done with the container, go to Docker Desktop and stop the container. Because of `--rm` flag while running container,  stopping will remove the container.
 
-![](https://github.com/sumanstats/rakurstudio/blob/main/imgs/dock_desktop.PNG)
+![](https://github.com/sumanstats/rakurstudio/blob/main/imgs/container.PNG)
 
 To read more on usage, go [here](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image).
 
