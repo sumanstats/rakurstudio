@@ -4,10 +4,8 @@ ENV LANG=C.UTF-8 \
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-    g++ make swig libboost-python-dev pipx \
-    && rm -rf /var/lib/apt/lists/* && pipx install cython \
-    && pipx install pybind11 \
-    && pipx install ipython \
-    && pipx ensurepath 
-  
+    g++ make swig libboost-python-dev python3-pybind11 \
+    pybind11-dev cython3 ipython3 \
+    && rm -rf /var/lib/apt/lists/*
+    
 CMD ["ipython"]
