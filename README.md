@@ -22,10 +22,22 @@ image            | description
 
 ## How to run this image?
 
-To get **RStudio®** session with `Raku` go to the docker quickstart terminal and type:
+To get **RStudio®** session with `Raku`, first download Docker Desktop and follow their instructions (like for WSL). Then pull the image within Docker Desktop under `Images` from **Hub**:
 
-+ `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name rstudio -v $PWD:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name rstudio -v $PWD:/home/rstudio sumankhanal/rustrakurstudio` which will mount current working directory to `/home/rstudio`   within container
-+ Visit `docker_ip_address:8787` in your browser and log in with username **rstudio** and the password you set. **NB: Setting a password is now REQUIRED**. Container will error otherwise.
+![](https://github.com/sumanstats/rakurstudio/blob/main/imgs/dock_desktop.PNG)
+ 
+ 
++ In `cmd` line in Windows, run the rstudio with `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v %cd%:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v %cd%:/home/rstudio sumankhanal/rustrakurstudio` which will mount the *current working directory* to `/home/rstudio`   within container
+
++ In `PowerShell` line in Windows, run the rstudio with `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v ${PWD}:/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v ${PWD}:/home/rstudio sumankhanal/rustrakurstudio` which will mount the *current working directory* to `/home/rstudio`   within container
+
++ In `Git Bash Shell` in Windows, run the rstudio with `MSYS_NO_PATHCONV=1 docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v $(pwd):/home/rstudio sumankhanal/rakurstudio` **OR** `docker run -d -p 8787:8787 -e PASSWORD=<yourpasswordhere> --name <username> --rm -v ${PWD}:/home/rstudio sumankhanal/rustrakurstudio` which will mount the *current working directory* to `/home/rstudio`   within container
+
++ Visit `http://localhost:8787/` in your browser and log in with the `<username>` and `password` you set. **NB: Setting a password is now REQUIRED**. Container will error otherwise.
+
++ Once you are done with the container, go to Docker Desktop and stop the container. Because of `--rm` flag while running container,  stopping will remove the container.
+
+![](https://github.com/sumanstats/rakurstudio/blob/main/imgs/dock_desktop.PNG)
 
 To read more on usage, go [here](https://github.com/rocker-org/rocker/wiki/Using-the-RStudio-image).
 
