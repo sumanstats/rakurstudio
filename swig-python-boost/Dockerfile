@@ -8,4 +8,4 @@ RUN apt-get update \
     pybind11-dev cython3 ipython3 \
     && rm -rf /var/lib/apt/lists/*
     
-CMD ["ipython"]
+CMD ["ipython3"]
